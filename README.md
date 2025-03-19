@@ -16,15 +16,14 @@ built using [lush.nvim](https://github.com/rktjmp/lush.nvim).
 
 ## [lazy.nvim](https://github.com/folke/lazy.nvim)
 
+Plugin spec for [LazyVim](https://github.com/folke/lazy.nvim)
+
 ```lua
-{
-    "anAcc22/sakura.nvim"
+return {
+    "anAcc22/sakura.nvim",
+    config = function()
+        vim.opt.background = "dark" -- or "light"
+        vim.cmd.colorscheme("sakura"); -- sets the colorscheme
+    end
 }
-```
-
-# Usage
-
-```lua
-vim.opt.background = "dark" -- or "light"
-vim.cmd.colorscheme("sakura");
 ```
