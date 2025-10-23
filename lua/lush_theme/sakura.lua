@@ -362,7 +362,7 @@ local theme = lush(function(injected_functions)
     NvimTreeFolderIcon { fg = palette.pi0 },
 
     IblScope { fg = palette.gp1 },
-    IblIndent { fg = palette.pi1 },
+    IblIndent { fg = palette.pi0 },
 
     NeoTreeDirectoryIcon { fg = palette.sa0 },
 
