@@ -361,6 +361,9 @@ local theme = lush(function(injected_functions)
     NvimTreeNormal     { bg = palette.vs1 },
     NvimTreeFolderIcon { fg = palette.pi0 },
 
+    IblScope { fg = palette.gp1 },
+    IblIndent { fg = palette.pi1 },
+
     NeoTreeDirectoryIcon { fg = palette.sa0 },
 
     -- Tree-Sitter syntax groups.
