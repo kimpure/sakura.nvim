@@ -356,14 +356,11 @@ local theme = lush(function(injected_functions)
 
     LeapLabel { bg = palette.sa1, fg = palette.bg0, bold = true },
 
-    IblScope { fg = palette.sa0 },
-    IblIndent { fg = palette.pi1 },
-
     MarkviewLayer { bg = palette.gp9 },
 
     NvimTreeNormal     { bg = palette.vs1 },
     NvimTreeFolderIcon { fg = palette.pi0 },
-    
+
     NeoTreeDirectoryIcon { fg = palette.sa0 },
 
     -- Tree-Sitter syntax groups.
