@@ -360,7 +360,7 @@ local theme = lush(function(injected_functions)
 
     NvimTreeNormal     { bg = palette.vs1 },
     NvimTreeFolderIcon { fg = palette.pi0 },
-    NvimTreeRootFolder { fg = palette.bg3, bold = false },
+    NvimTreeRootFolder { fg = palette.fg0, bold = false },
 
     IblScope { fg = palette.gp1 },
     IblIndent { fg = palette.pi0 },
