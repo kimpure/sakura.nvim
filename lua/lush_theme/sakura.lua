@@ -182,7 +182,7 @@ local theme = lush(function(injected_functions)
     SignColumn     { LineNr }, -- Column where |signs| are displayed
     IncSearch      { CurSearch }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     Substitute     { bg = palette.sr9, fg = palette.sr0 }, -- |:substitute| replacement text highlighting
-    CursorLineNr   { fg = palette.fg1, italic = true, bold = true }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
+    CursorLineNr   { fg = palette.fg1, bold = true }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
     -- CursorLineFold { }, -- Like FoldColumn when 'cursorline' is set for the cursor line
     -- CursorLineSign { }, -- Like SignColumn when 'cursorline' is set for the cursor line
     -- MatchParen     { }, -- Character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
@@ -235,10 +235,10 @@ local theme = lush(function(injected_functions)
     --
     -- Uncomment and edit if you want more specific syntax highlighting.
 
-    Comment        { fg = palette.bg3, italic = true }, -- Any comment
+    Comment        { fg = palette.bg3, }, -- Any comment
 
     Constant       { fg = palette.gp1 }, -- (*) Any constant
-    String         { fg = palette.gb0, italic= true }, --   A string constant: "this is a string"
+    String         { fg = palette.gb0, }, --   A string constant: "this is a string"
     Character      { fg = palette.gb1, gui = "italic" }, --   A character constant: 'c', '\n'
     Number         { fg = palette.gp0 }, --   A number constant: 234, 0xff
     Boolean        { Constant, bold = true }, --   A boolean constant: TRUE, false
@@ -261,7 +261,7 @@ local theme = lush(function(injected_functions)
     Macro          { PreProc }, --   Same as Define
     PreCondit      { PreProc }, --   Preprocessor #if, #else, #endif, etc.
 
-    Type           { fg = palette.sa0, italic= true, bold = true }, -- (*) int, long, char, etc.
+    Type           { fg = palette.sa0, bold = true }, -- (*) int, long, char, etc.
     StorageClass   { fg = palette.sa1 }, --   static, register, volatile, etc.
     Structure      { Type }, --   struct, union, enum, etc.
     Typedef        { StorageClass }, --   A typedef
