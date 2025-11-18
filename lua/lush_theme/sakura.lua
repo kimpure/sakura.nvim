@@ -46,7 +46,7 @@ local lush = require('lush')
 local hsluv = lush.hsluv
 
 local dark = {
-    bg0 = hsluv(300, 6, 8),
+    bg0 = hsluv(0, 0, 2),
     bg1 = hsluv(300, 6, 14),
     bg2 = hsluv(300, 8, 18),
     bg3 = hsluv(300, 8, 36),
@@ -358,7 +358,7 @@ local theme = lush(function(injected_functions)
 
     MarkviewLayer { bg = palette.gp9 },
 
-    NvimTreeNormal     { bg = palette.vs1 },
+    NvimTreeNormal     { bg = palette.bg0 },
     NvimTreeFolderIcon { fg = palette.pi0 },
     NvimTreeRootFolder { fg = palette.fg0, bold = false },
 
