@@ -319,6 +319,9 @@ local theme = lush(function(injected_functions)
     -- DiagnosticSignHint         { } , -- Used for "Hint" signs in sign column.
     -- DiagnosticSignOk           { } , -- Used for "Ok" signs in sign column.
 
+    CmpItemAbbrMatch { fg = palette.sa0 },
+    CmpItemAbbrMatchFuzzy { fg = palette.sa0 },
+
     Added            { fg = palette.gr0 },
     Changed          { fg = palette.yl0 },
     Removed          { fg = palette.er0 },
